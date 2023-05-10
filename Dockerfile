@@ -1,9 +1,11 @@
 FROM ghcr.io/investigativedata/ftmstore-fastapi:develop
 
-
 ENV FTM_STORE_URI=sqlite:////data/followthemoney.store
 
 RUN mkdir /data
+RUN chown 1000:1000 /data
+
+USER 1000
 
 ADD "https://data.ftm.store/investigraph.json" /data/catalog.json
 RUN curl -s https://data.ftm.store/eu_authorities/entities.ftm.json | ftm store write -d eu_authorities
