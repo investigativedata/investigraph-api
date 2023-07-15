@@ -6,9 +6,9 @@ RUN mkdir /data
 
 ADD "https://data.ftm.store/investigraph.json" /data/catalog.json
 RUN chown 1000:1000 /data/catalog.json
-RUN curl -s https://data.ftm.store/eu_authorities/entities.ftm.json | ftm store write -d eu_authorities
-RUN curl -s https://data.ftm.store/ec_meetings/entities.ftm.json | ftm store write -d ec_meetings
-RUN curl -s https://data.ftm.store/gdho/entities.ftm.json | ftm store write -d gdho
+RUN curl -s https://data.ftm.store/investigraph/eu_authorities/entities.ftm.json | ftm store write -d eu_authorities
+RUN curl -s https://data.ftm.store/investigraph/ec_meetings/entities.ftm.json | ftm store write -d ec_meetings
+RUN curl -s https://data.ftm.store/investigraph/gdho/entities.ftm.json | ftm store write -d gdho
 
 ENV CACHE=1
 ENV PRELOAD_DATASETS=1
