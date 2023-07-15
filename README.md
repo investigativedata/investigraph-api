@@ -7,7 +7,7 @@ This repo builds a [ftmstore-fastapi](https://github.com/investigativedata/ftmst
 - [EU authorities as collected by AsktheEU.org](https://www.asktheeu.org/en/help/api)
 - [Global Database of Humanitarian Organisations](https://www.humanitarianoutcomes.org/projects/gdho)
 
-The api runs at https://api.investigraph.ftm.store, where you can find a documentation on how to query the data.
+The api runs at https://api.investigraph.dev, where you can find a documentation on how to query the data.
 
 ## supported by
 
