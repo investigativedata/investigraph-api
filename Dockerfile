@@ -1,4 +1,4 @@
-FROM ghcr.io/investigativedata/ftmstore-fastapi:develop
+FROM ghcr.io/investigativedata/ftmstore-fastapi:main
 
 ENV FTM_STORE_URI=sqlite:////data/followthemoney.store
 ENV CATALOG=/data/catalog.json
